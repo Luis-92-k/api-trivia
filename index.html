@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Trivia</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-5">
+        <div>
+            <div class="form-group">
+                    <div>
+                        <label for="questions-number"></label>
+                        <select onchange="getQuestions()" class="form-control" id="questions-number">
+                        <option value="elige-cuantas.preguntas-quieres">Eige cuántas preguntas quieres</option>
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                        <option value="20">25</option>
+                        <option value="20">30</option>
+                        <option value="20">35</option>
+                        <option value="20">40</option>
+                        <option value="20">45</option>
+                        <option value="20">50</option>
+                    </select>
+                    </div>
+
+                    <div>
+                        <label for="questions-category"></label>
+                        <select onchange="getQuestions()" class="form-control" id="questions-category">
+                        <option value="any-category">Any Category</option>
+                    </select>
+                    </div>
+
+                    <div>
+                        <label for="questions-difficulty"></label>
+                        <select onchange="getQuestions()" class="form-control" id="questions-difficulty">
+                        <option value="any-difficulty">Any difficulty</option>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                        
+                    </select>
+                    </div>
+
+                    <div>
+                       
+                        <label for="questions-type"></label>
+                        <select onchange="getQuestions()" class="form-control" id="questions-type">
+                        <option value="">Any Type</option>
+                        <option value="multiple">Multiple Choice</option>
+                        <option value="boolean">True / False</option>
+                    </select>
+                    </div>
+
+            </div>
+        </div>
+        <!-- Aquí van las tarjetas -->
+        <div id="container-cards">
+​
+        </div>
+    </div>
+    <button class="mt-5">Ver calificación</button>
+    <script src="./main.js"></script>
+</body>
+</html>
